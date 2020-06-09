@@ -62,6 +62,6 @@ var contenido = document.querySelector('#mensajes')
                 console.log(data.results['0'])
                 datos=data.results['0']
                 let objetoTemporal={nombre:datos.name,telefono:datos.phone,mensaje:"Contactame por favor"}
-                document.getElementById("listaMensajes").insertRow(-1).innerHTML = `<td>${objetoTemporal.nombre.last}</td><td>${objetoTemporal.telefono}</td><td>${objetoTemporal.mensaje} dolares</td>`      
+                document.getElementById("listaMensajes").insertRow(-1).innerHTML = `<td>${objetoTemporal.nombre.last}</td><td>${objetoTemporal.telefono}</td><td>${objetoTemporal.mensaje}</td>`      
             })
         } 
